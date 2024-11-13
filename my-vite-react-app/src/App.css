@@ -1,0 +1,168 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo {
+  width: 230px;
+  height: 20px;
+}
+
+/* Main Container Styling */
+.category-selection,
+.trivia-questions,
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* Text Styling */
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px; /* Space between heading and next element */
+}
+
+/* Button Styling */
+button {
+  font-family: 'Outfit', sans-serif;
+  border-radius: 16px;
+  border: 1px solid rgba(110, 85, 73, 0.2);
+  padding: 8px 18px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover */
+button:hover,
+button:active {
+  background-color: #e6c200;
+  color: black;
+}
+/* Selected Button Styling */
+button.selected {
+  background-color: #e6c200 !important; 
+  color: black; 
+  border: none; 
+}
+
+/* Button Disabled */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Answer choices for trivia questions */
+.answer-choices {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answer-choices button {
+  margin: 8px 0; /* Space between the answer buttons */
+}
+
+.next-button {
+  position: absolute; /* Position the button absolutely within the parent container */
+  bottom: 0; /* Position it at the bottom of the parent container */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Adjust for exact center alignment */
+  margin-bottom: 140px; /* Optional: Add space from the bottom of the container */
+}
+
+button.next {
+  padding: 12px 24px;
+  background-color: #e6c200;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button.next:hover {
+  background-color: #d7a300;
+}
+
+/* Results Container */
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results-container p {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.play-again-button {
+  margin-top: 16px;
+}
+
+/* Category Selection Spacing */
+.category-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Space between category options and continue button */
+}
+.category-buttons {
+  display: flex;
+  flex-direction: row;  /* Stack buttons vertically */
+  align-items: center;
+  gap: 15px;  /* Adjust the spacing between buttons */
+  width: 100%;
+}
+
+.continue-button {
+  margin-top: 20px; /* Space between category options and continue button */
+}
+
